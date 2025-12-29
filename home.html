@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap" rel="stylesheet">
+    <script>
+        window.onload = function(){
+        const words = ["Software Engineer", "Web Developer", "Designer", "Problem Solver"];
+        const contentArea = document.getElementById("contentArea");
+        let currentIndex = 0;
+
+        function changeText() {
+            contentArea.style.opacity = 0; // Fade out
+
+            // Wait a moment for the fade out, then change text and fade in
+            setTimeout(() => {
+                contentArea.textContent = words[currentIndex];
+                contentArea.style.opacity = 1; // Fade in
+
+                currentIndex++;
+                if (currentIndex >= words.length) {
+                    currentIndex = 0;
+                }
+            }, 500); // 500ms delay for the fade effect
+        }
+
+        // Run the function every 3 seconds (3000ms)
+        setInterval(changeText, 2000);
+    } 
+    </script>
+</head>
+<body>
+    <video  autoplay loop class="video" style="width: 100%; height: 100vh; z-index: -1; object-fit: cover; position: fixed;">
+        <source src="./asssets/backgroundvideo.mp4" type="video/mp4">
+    </video>
+    <section class="logo" style="grid-area: logo1;">
+            <div class="logodiv">
+                <a href="home.html" style="text-decoration: none;">
+                    <p>Bilal</p>
+                </a>
+            </div>
+            <div class="profilepic" style="margin-right: 20px;">
+                <img src="./asssets/Untitled.jpg" alt="profile picture">
+            </div>
+    </section>
+        
+    <section class="body">
+        <div class="social">
+                <a href="https://www.instagram.com"><img src="./asssets/icons8-instagram-48.png" alt="insta" width="50px" height="50px"></a>
+                <a href="https://www.instagram.com"><img src="./asssets/icons8-linkedin-48.png" alt="linkedin"></a>
+                <a href="mailto:muhammedbilal@gmail.com"><img src="./asssets/icons8-gmail-48.png" alt="mail" width="40px" height="50px"></a>
+            </div>
+        <section class="body" style="grid-area: body; height: 100vh; ">
+            
+            <br>
+            <br><br>
+            
+            
+            <div class="bodydiv1" >
+                <div class="prof1">
+                    <img src="./asssets/Untitled.png" alt="profile pic">
+                </div>
+                <div class="intro">
+                    <h1 >Hi, I</h1>
+                    <h1 >am</h1>
+                    <h1 >muhammed</h1>
+                    <h1 >Bilal</h1>
+                    <h3 style="display: inline;">A</h3>
+                    <h3 id="contentArea" style="display: inline;">Human</h3>
+                </div>
+            </div>
+            <br>
+            <br><br>
+            <br><br><br>
+            <br>
+            <br>
+            <br>
+            <div class="bodydiv">
+                <div class="text">
+                    <h1 >I</h1>
+                    <h1 >Help</h1>
+                    <h1 >People</h1>
+                    <h1 >to</h1>
+                    <h1 >Build</h1>
+                    <h1 >Systems</h1>
+                </div>
+                <div class="homeimage">
+                    <img class="prof" src="./asssets/image1.png" alt="profile">
+                </div>
+            </div>
+            <br>
+            <br>
+            <section id="About">
+            <br>
+            <br>
+            <br>
+            <br>
+            
+                <div class="aboutme">
+                    <div class="aboutmetext">
+                        <h1>About myself</h1>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="aboutmepara">
+                        <p>
+                            My journey into software engineering is driven by a simple curiosity, how to build systems that are as secure as they are intelligent. What began as a fascination with the logic of programming has evolved into a professional mission to bridge the gap between complex problems and elegant, scalable solutions.
+                            <br>
+                            <br>
+                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I view code as a tool for innovation, focusing my energy on the intersection of Machine Learning, Cyber Security, and Mobile Development. This technical focus is balanced by a natural inclination toward leadership; as a Training Cell Coordinator, I’ve learned that the most resilient systems are built through clear communication and collaborative problem-solving.
+                            <br>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When I’m not exploring new frameworks or securing digital environments, I’m usually behind a camera. Photography and video editing are more than just hobbies—they keep my eye sharp for detail and remind me that, whether in an interface or an image, the finer points make all the difference.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <br><br><br><br><br><br>
+            <section id="skills">
+                <br>
+            <br>
+            <br>
+            <br>
+                <div class="skills">
+                    <div class="skillstext">
+                        <h1>Skills</h1>
+                    </div>
+                    <br><br><br>
+                    <div class="skillsicons">
+                        
+                        <img width="90" height="100" src="https://img.icons8.com/arcade/64/html-5.png" alt="html-5"/>
+                        <img width="90" height="100" src="https://img.icons8.com/stickers/100/css3.png" alt="css3"/>
+                        <img width="90" height="100" src="https://img.icons8.com/color/48/mongodb.png" alt="mongodb"/>
+                        <img width="90" height="100" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/external-mysql-an-open-source-relational-database-management-system-logo-shadow-tal-revivo.png" alt="external-mysql-an-open-source-relational-database-management-system-logo-shadow-tal-revivo"/>
+                        <img width="90" height="100" src="https://img.icons8.com/color/48/c-programming.png" alt="c-programming"/>
+                        <img width="90" height="100" src="https://img.icons8.com/color/48/git.png" alt="git"/>
+                         <img width="90" height="100" style="border-radius: 15px;" src="./asssets/icons8-js.gif" alt="js"/>
+                          <img width="90" height="100" style="border-radius: 30px;" src="./asssets/icons8-python.gif" alt="python"/>
+
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br><br><br><br><br>
+            <section id="projects">
+                <br>
+            <br>
+            <br>
+            <br>
+                <div class="projecth1">
+                    <h1 style="font-size: 40px; color: white; font-family:BBH Bartle, sans-serif; font-weight: 600; ">Projects</h1>
+                </div>
+                <div class="projectgrid">
+                        <div class="project1">
+                            <br>
+                            <h1 style="color: rgb(0, 0, 0); display: inline; ">Jobshere</h1>
+                            <a href="www.github.com/muhammedbilalmn"><i class="fa-solid fa-link" style="color: #000000;"></i></a>
+                            <p>A jobportal Webapp with basic features of adding,applying and listing jobs</p>
+                            
+                        </div>
+                        <div class="project2">
+                            <br>
+                            <h1 style="color: rgb(0, 0, 0); display: inline; ">Phishion</h1>
+                            <a href="www.github.com/muhammedbilalmn"><i class="fa-solid fa-link" style="color: #000000;"></i></a>
+                            <p>A machine learning model to detect the phishing websites with accuracy of 98.7%</p>
+                        </div>
+                        <div class="project3">
+                            <br>
+                            <h1 style="color: rgb(0, 0, 0); display: inline; ">Heal-pd</h1>
+                            <a href="www.github.com/muhammedbilalmn"><i class="fa-solid fa-link" style="color: #000000;"></i></a>
+                            <p>A machine learning model to detect the parkinson's disease.</p>
+                        </div>
+                       
+                </div>
+            
+            </section>
+            <br>
+            <br>
+            <br>
+            <br><br><br><br><br>
+            <section id="contact">
+                <div>
+                    <h1 style="font-size: 40px; color: white; font-family:BBH Bartle, sans-serif; font-weight: 600; ">Contact me</h1>
+                </div>
+                <div class="contactdiv">
+                    <form action="#contact" method="get">
+                        <div class="contactall">
+                            <div class="contactname">
+                            <label for="name">Name :</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" required>
+                            </div>
+                            <div class="contactemail">
+                            <label for="email">E-Mail :</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="email" name="email" required >
+                            </div>
+                            <div class="contactmessage">
+                            <label for="message">Message :</label> &nbsp&nbsp;
+                            <textarea name="message" id="message" rows="6"></textarea>
+                            </div>
+                            <div>
+                                <button>Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <br><br><br><br><br><br><br><br>
+            <div class="footer">
+                <p>&copy All Rights Reserved </p>
+            </div>
+        </section>
+        
+        
+        <section  class="dockmain" >
+            <div class="dock" style="grid-area:dock;">
+                <a href="home.html" id="home">
+                    <div class="bottom"  >
+                    <i class="fa-regular fa-house" style="color: #f9f7f7;" ></i>
+                    <p style="margin: 0; ">Home</p>
+                </div>
+                </a>
+                <div class="bottom">
+                    <a href="#About">
+                        <i class="fa-regular fa-user" style="color: #eeeeee;"></i>
+                        <p style="margin: 0;">About</p>
+                    </a>
+                </div>
+                <div class="bottom">
+                    <a href="#skills">
+                        <i class="fa-brands fa-slack" style="color: #ffffff;"></i>
+                    <p style="margin: 0;">Skills</p>
+                    </a>
+                </div>
+                <div class="bottom">
+                    <a href="#projects">
+                        <i class="fa-solid fa-layer-group" style="color: #f3efed; "></i>
+                        <p style="margin: 0;">Projects</p>
+                    </a>
+                </div>
+                <div class="bottom">
+                    <a href="#contact">
+                        <i class="fa-regular fa-message" style="color: #f7f5f4; "></i>
+                    <p style="margin: 0;">Contact</p>
+                    </a>
+                </div>
+                
+            </div>
+        </section>
+    </section>
+</body>
+</html>

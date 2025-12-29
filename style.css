@@ -1,0 +1,521 @@
+/* top area logo */
+.logo{
+    
+    height: 50px;
+    width: 100%;
+    position: fixed; 
+    top: 0; 
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+    z-index: 999;
+    
+    
+    
+}
+
+.logodiv p{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+    margin: 0;
+    margin-left: 40px;
+    color: #ffffff;
+    padding: 3px;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.profilepic img{
+    width: 40px;
+    height: 40px;
+    border: 2px #f25912 solid;
+    object-fit: cover;
+    border-radius: 15px;
+}
+/* social */
+.social{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    position: fixed;
+    right: 20px;
+    bottom: 400px;
+    
+}
+.social img{
+    box-shadow: #ffffff;
+    object-fit: cover;
+    transition: transform .25s;
+}
+.social img:hover{
+    transform: scale(1.5);
+    
+}
+/* area for the body */
+
+body{
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    z-index: 100;
+    height: 100vh;
+    display: grid;
+    grid-template-rows:  1fr;
+    grid-template-areas:
+    
+    "body";
+
+}
+
+.bodydiv1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 100px;
+    
+}
+.prof1{
+    
+    
+    width: 220px;
+    height: 620px;
+
+}
+.prof1 img{
+    
+    filter: hue-rotate(15deg);
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    
+
+    
+}
+
+.intro{
+    color: #ffffff;
+    text-align: left;
+    font-weight: 600;
+    font-family: "BBH Bartle", sans-serif;
+    letter-spacing: 3px;
+    line-height: 100px;
+}
+
+.bodydiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 100px;
+}
+.prof{
+    padding-top: 50px;
+    width: 600px;
+    height: 500px;
+    object-fit: contain;
+    
+}
+.intro h1{
+    padding: 0;
+    margin: 0;
+    font-size: 70px;
+}
+.bodydiv .text{
+    color: #ffffff;
+    text-align: left;
+    font-weight: 600;
+    font-family: "BBH Bartle", sans-serif;
+    letter-spacing: 3px;
+    line-height: 100px;
+    margin-bottom: 20px;
+
+}
+.bodydiv h1{
+    padding: 0;
+    margin: 0;
+    font-size: 70px;
+    
+}
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.aboutmetext h1{
+    font-size: 45px;
+    padding: 0;
+    margin:0;
+    color: white;
+    font-family: "BBH Bartle", sans-serif;
+    
+}
+.aboutmepara p{
+    animation: slide-in 1.5s;
+    font-size: 20px;
+    padding: 0;
+    margin:0;
+    max-width: 1000px;
+    color: white;
+    font-family: "BBH Bartle", sans-serif;
+    line-height: 20px;
+    letter-spacing: 2px;
+    
+}
+@keyframes slide-in {
+    from{
+        translate: 150vw 0;
+        scale: 200% 1;
+
+    }
+    to{
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
+.skils{
+    margin-top: 50px;
+}
+.skillstext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skillstext h1{
+    font-size: 45px;
+    padding: 0;
+    margin:0;
+    color: white;
+    font-family: "BBH Bartle", sans-serif;
+    
+}
+.skillsicons{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 120px 120px 120px 120px 120px;
+    justify-content: center;
+    align-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    max-width:  90%;
+    
+    
+    
+}
+.skillsicons img:hover{
+    width: 110px;
+    height: 120px;
+    transition: .15s ease-in-out;
+}
+/* project section */
+.projecth1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projectgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    margin: 40px;
+    justify-items: center;
+}
+.projectgrid div{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border: #f25912 3px solid;
+    background: rgba(221, 183, 183, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(221, 183, 183, 1);
+    
+      
+}
+.projectgrid .project1{
+    background-image: url("./asssets/20943587.jpg");
+    background-size:cover ;
+    opacity: 0.5;
+    
+}
+.projectgrid .project1:hover{
+    opacity: 1;
+    
+}
+.project1 p{
+    font-family: sans-serif;font-size: 20px;
+    padding-left: 10px;
+    color: #000000;
+    padding-top: 270px;
+}
+.project h1{
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+
+}
+.project1 h1{
+    
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-left: 90px;
+    padding-right: 30px;
+
+}
+/* projrct 2 */
+.projectgrid .project2{
+    background-image: url("./asssets/Data_security_22.jpg");
+    background-size:cover ;
+    opacity: 0.5;
+    
+}
+.projectgrid .project2:hover{
+    opacity: 1;
+    
+}
+.project2 p{
+    font-family: sans-serif;font-size: 20px;
+    padding-left: 10px;
+    color: #000000;
+    padding-top: 270px;
+}
+.project h1{
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+
+}
+.project2 h1{
+    
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-left: 90px;
+    padding-right: 30px;
+
+}
+/* pro 3 */
+.projectgrid .project3{
+    background-image: url("./asssets/hand-drawn-flat-design-parkinson-illustration_23-2149293345.jpg");
+    background-size:contain ;
+    opacity: 0.5;
+    
+}
+.projectgrid .project3:hover{
+    opacity: 1;
+    
+}
+.project3 p{
+    font-family: sans-serif;font-size: 20px;
+    padding-left: 10px;
+    color: #000000;
+    padding-top: 270px;
+}
+.project h1{
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+
+}
+.project3 h1{
+    
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-left: 90px;
+    padding-right: 30px;
+
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+   align-items: center; 
+}
+
+.contactdiv{
+    width: 600px;
+    height: 500px;
+    /* From https://css.glass */
+background: rgba(221, 183, 183, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.9px);
+-webkit-backdrop-filter: blur(6.9px);
+border: 1px solid rgba(221, 183, 183, 1);
+}
+.contactall{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.contactall label{
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.contactname input{
+    margin-bottom: 20px;
+    width: 400px;
+    height: 50px;
+    text-align: left;
+    background: rgba(221, 183, 183, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(221, 183, 183, 1);
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-left: 10px;
+
+}
+.contactemail input{
+    margin-bottom: 20px;
+    width: 400px;
+    height: 50px;
+    text-align: left;
+    background: rgba(221, 183, 183, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(221, 183, 183, 1);
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-left: 10px;
+
+}
+.contactmessage{
+    display: flex;
+    justify-content: flex-start;
+}
+.contactmessage label{
+    display: inline;
+
+}
+.contactmessage textarea{
+    display: inline;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 200px;
+    text-align: left;
+    background: rgba(221, 183, 183, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(221, 183, 183, 1);
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px;
+}
+button{
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: rgb(15, 83, 15);
+    border: black 2px solid;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+
+
+
+/* area for the dock or the bottom part */
+.bottom{
+    width: 100px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px; 
+    /* From https://css.glass */
+    background: rgba(221, 183, 183, 0.58);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(221, 183, 183, 1); 
+    
+}
+.bottom p{
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+    color:#ffffff ;
+    
+}
+.dock{
+    width: 800px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(42, 207, 69);
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 1em;
+    /* From https://css.glass */
+    /* From https://css.glass */
+    background: rgba(202, 179, 179, 0.29);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    border: 1px solid rgba(221, 183, 183, 1);
+
+}
+.bottom:hover{
+    transform: translateY(-20px);
+    transition: ease-in-out 5ms;
+}
+.bottom:focus-within{
+    color: rgba(228, 13, 13, 0.875);
+    
+}
+
+.dockmain{
+    
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    height: 150px; 
+    display: flex; 
+    justify-content: 
+    center; 
+    z-index: 999; 
+    align-items: center;
+}
+
+i{
+    font-size: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.footer{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 25px;
+    
+}
+
+#in:hover{
+    transform: translateX(20px);
+    cursor: pointer;
+}
