@@ -42,7 +42,7 @@
     row-gap: 20px;
     position: fixed;
     right: 20px;
-    bottom: 400px;
+    bottom: 300px;
     
 }
 .social img{
@@ -83,14 +83,14 @@ body{
     
     
     width: 220px;
-    height: 620px;
+    height: 520px;
 
 }
 .prof1 img{
     
     filter: hue-rotate(15deg);
     width: 500px;
-    height: 600px;
+    height: 500px;
     object-fit: cover;
     
 
@@ -123,7 +123,7 @@ body{
 .intro h1{
     padding: 0;
     margin: 0;
-    font-size: 70px;
+    font-size: 60px;
 }
 .bodydiv .text{
     color: #ffffff;
@@ -138,7 +138,7 @@ body{
 .bodydiv h1{
     padding: 0;
     margin: 0;
-    font-size: 70px;
+    font-size: 60px;
     
 }
 .aboutme{
@@ -157,7 +157,7 @@ body{
 }
 .aboutmepara p{
     animation: slide-in 1.5s;
-    font-size: 20px;
+    font-size: 15px;
     padding: 0;
     margin:0;
     max-width: 1000px;
